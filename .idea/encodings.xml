@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/eurekaclient01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaclient01/src/main/java/com/example/eurekaclient01/config/AClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaclient02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafkapractice/springbootkafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nettypractice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quartz-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-test/src/main/java/com/example/rabbitmq/helloworld/Consumer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-test/src/main/java/com/example/rabbitmq/helloworld/Producer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-test/src/main/java/com/example/rabbitmq/helloworld/Receiver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbonpractice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-config-server-learn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils/src/main/java/com/example/utils/transfer/UtilString.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

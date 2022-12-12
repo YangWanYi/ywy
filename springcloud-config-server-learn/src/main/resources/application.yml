@@ -1,0 +1,13 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: cfg-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YangWanYi/ywy-cloud-config.git
+          username: 1391715300@qq.com
+#          username: YangWanYi
+          password: 940825ywy

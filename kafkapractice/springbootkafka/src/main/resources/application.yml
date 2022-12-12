@@ -1,0 +1,59 @@
+server:
+  port: 10003
+
+spring:
+  kafka:
+    #    招商生产
+    bootstrap-servers: 113.108.52.118:4441,113.108.52.118:4440,113.108.52.118:4439
+    #    招商uat
+#    bootstrap-servers: 113.108.52.72:4439,113.108.52.72:4440,113.108.52.72:4441
+    ssl:
+      #      招商生产
+      key-password: mq@proxy2021
+      key-store-location: file://E:\kafka\client.keystore.jks
+      key-store-password: mq@proxy2021
+      trust-store-location: file://E:\kafka\client.truststore.jks
+      trust-store-password: mq@proxy2021
+      #      招商uat
+#      key-password: cmsk-ioc-1234
+#      key-store-location: file://D:\temp\ioc-ssl\client.keystore.jks
+#      key-store-password: cmsk-ioc-1234
+#      trust-store-location: file://D:\temp\ioc-ssl\client.truststore.jks
+#      trust-store-password: cmsk-ioc-1234
+    producer:
+      retries: 3 # 设置大于0的值，客户端会把发送失败的记录重新发送
+      batch-size: 16384
+      buffer-memory: 33554432
+      acks: 1
+      # 指定消息key和消息体的编解码方式
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        security.protocol: SSL
+        ssl:
+          endpoint:
+            identification:
+              algorithm:
+#    consumer:
+#      group-id: default-group
+#      enable-auto-commit: false
+#      auto-offset-reset: earliest
+      # 指定消息key和消息体的编解码方式
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    listener:
+      # 当一条记录被消费者监听器ListenerConsumer处理之后提交
+      # RECORD
+      # 当每一批poll()的数据被消费者监听器ListenerConsumer处理之后提交
+      # BATCH
+      # 当每一批poll()的数据被消费者监听器ListenerConsumer处理之后，距离上次提交时间大于TIME时提交
+      # TIME
+      # 当每一批poll()的数据被消费者监听器ListenerConsumer处理之后，被处理记录数量大于等于COUNT时提交
+      # COUNT
+      # TIME或COUNT有一个条件满足时提交
+      # COUNT_TIME
+      # 当每一批poll()的数据被消费者监听器ListenerConsumer处理之后，手动调用Acknowledgment.acknowledge()后提交
+      # MANUAL
+      # 手动调用Acknowledgment.acknowledge()后立即提交，一般使用这种
+      # MANUAL_IMMEDIATE
+      ack-mode: manual_immediate

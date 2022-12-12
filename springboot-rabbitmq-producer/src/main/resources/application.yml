@@ -1,0 +1,8 @@
+# \u914D\u7F6ERabbitMQ\u7684\u57FA\u672C\u4FE1\u606F
+spring:
+  rabbitmq:
+    host: 192.168.0.42
+    port: 5672
+    username: ywy
+    password: ywy
+    virtual-host: myHost
